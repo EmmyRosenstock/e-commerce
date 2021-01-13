@@ -13,6 +13,7 @@
 }
 #page-home .content header{
     margin: 48px 0 0;
+    width: 100%;
 }
 #page-home .content header img{
 position: absolute;

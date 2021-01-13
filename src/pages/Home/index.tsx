@@ -25,7 +25,7 @@ const Home=() =>{
                   <input className="btnBusca" type="submit" value="Ok"/>
                   </form>
                    </div>
-
+                        <div className='carrinho'>
                       <Link to="/conta">
                           <img className='bolsa' src='https://static.vecteezy.com/ti/vetor-gratis/p1/628934-icone-carrinho-de-compras-gr%C3%A1tis-vetor.jpg'/>
 
@@ -34,7 +34,7 @@ const Home=() =>{
                               <FiLogIn/>
                           </span>
                       </Link>
-                    
+                      </div>
                   </header>
                   <div className="Banner">
                       <img className='banner' src="https://s3.amazonaws.com/ibc-portal/wp-content/uploads/2020/04/29152053/familia-feliz.jpg"/>

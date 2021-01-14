@@ -1,5 +1,6 @@
 #page-home{
     height: 100 vh;
+    display: flex;
 }
 #page-home .content{
     width: 100%;
@@ -12,46 +13,54 @@
     align-items: flex-start;
 }
 #page-home .content header{
-    margin: 48px 0 0;
+    width: 900px;
+	height: 300px;
+    position: relative;
+  
+    display: grid;
+  
 }
 #page-home .content header img{
 position: absolute;
-width: 250px;
-height: 250px;
-border-radius: 21px;
+width: 170px;
+height: 170px;
+
 }
 #page-home .content header h1{
      position: relative;
      color: #2E7054;
      text-align:center;
-     top: 150px;
-     width: 290px;
+     top: 100px;
+     width: 220px;
      line-height: 30px;
      height: 30px;
-     font-size:18px;
-     font-family:'Roboto', sans-serif;;
+     font-size:15px;
+     font-family:'Roboto', sans-serif, Bold;
+     
 }
 #page-home .content header .busca {
      display: flex;
      justify-content: center;
      margin:0 auto;
      padding:0;
+    
     }
-    #page-home .content header .busca .txtbusca {
+    #page-home .content header .busca .search .txtbusca {
     border:0px solid #222;
     background:#EEE;
     width:260px;
     height:23px;
+    
     margin:0 auto;
     padding:5px 0 5px 5px;
     float:left; 
     line-height:36px; 
     }
-    #page-home .content header.busca .btnBusca {
-    background:#00cccc;
-    position:relative;
+    #page-home .content header.busca .search .btnBusca {
+    background:darkseagreen;
+    position: relative;
     border:0px solid #222;
-    color:#FFF; 
+    color:darkseagreen; 
     margin:0 auto;
     padding:10px;
     border:0 none;
@@ -59,10 +68,23 @@ border-radius: 21px;
     font-weight:bold;
     text-transform:uppercase;
     }
-    #btnBusca:hover {
+    .btnBusca:hover {
     background:#99cccc; 
+    } 
+    #page-home .content .carrinho{
+        float:left;
+        display: flex;
+        position: absolute;
+        justify-content: left;
+       
+        
     }
-
+    #page-home .content .carrinho .bolsa{
+        width: 50px;
+        height: 50px;
+      
+    }
+  
 #page-home .content .Banner{
     display: flex;
     position: relative;
@@ -70,6 +92,7 @@ border-radius: 21px;
     height: 500px;
     top: 200px;
 }
+
     
 
 

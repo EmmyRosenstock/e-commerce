@@ -27,6 +27,7 @@ const Home=() =>{
                    </div>
                         <div className='carrinho'>
                       <Link to="/conta">
+
                           <img className='bolsa' src='https://static.vecteezy.com/ti/vetor-gratis/p1/628934-icone-carrinho-de-compras-gr%C3%A1tis-vetor.jpg'/>
 
                           <span>
@@ -35,7 +36,9 @@ const Home=() =>{
                           </span>
                       </Link>
                       </div>
-                  </header>
+                      
+                    </header>
+                  <hr></hr>
                   <div className="Banner">
                       <img className='banner' src="https://s3.amazonaws.com/ibc-portal/wp-content/uploads/2020/04/29152053/familia-feliz.jpg"/>
                       <strong>Cuide bem da sua saude e bem estar da sua familia com produtos naturais e organicos</strong>

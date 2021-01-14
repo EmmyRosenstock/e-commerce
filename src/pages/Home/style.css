@@ -42,8 +42,13 @@ height: 170px;
 #page-home .content header .busca {
      display: flex;
      justify-content: center;
-     margin:0 auto;
-     padding:0;
+     margin:0px auto;
+     padding:-8px;
+     top: 80px;
+     position: relative;
+     height: 500px;
+     right: 100px;
+
     
     }
     #page-home .content header .busca .search .txtbusca {
@@ -77,14 +82,22 @@ height: 170px;
         display: flex;
         position: absolute;
         justify-content: left;
-        right:250px;
-       
-        
-    }
+        right:210px;
+        top: 105px;
+       }
     #page-home .content .carrinho .bolsa{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
       
+    }
+    #page-home .content .carrinho strong{
+        text-align: left;
+        text-decoration: none;
+        position: relative;
+        width: 100px;
+        height: 200px;
+
+        
     }
   
 #page-home .content .Banner{

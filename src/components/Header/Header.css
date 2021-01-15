@@ -1,0 +1,70 @@
+header {
+	height: 140px;
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header svg {
+    stroke-width: 1px;
+    stroke: black;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+header .logo {
+    height: 140px;
+    position: relative;
+}
+
+header .logo span {
+    white-space: nowrap;
+    position: absolute;
+    top: 85px;
+    left: 65px;
+}
+
+header .logo img {
+    height: 100%;
+}
+
+header .busca {
+    position: relative;
+}
+
+header .busca input {
+    width: 340px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+header .busca input::placeholder {
+    text-align: center; 
+}
+
+header .busca svg {
+    position: absolute;
+    left: 5px;
+    stroke-width: 2px;
+    top: 5px;
+}
+
+header .login a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .carrinho {
+
+}
+
+
+header * {
+    font: 600 13px Roboto, sans-serif;
+}

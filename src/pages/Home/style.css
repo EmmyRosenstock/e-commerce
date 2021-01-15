@@ -32,7 +32,7 @@ height: 170px;
      position: relative;
      color: #2E7054;
      text-align:center;
-     top: 100px;
+     top: 120px;
      width: 220px;
      line-height: 30px;
      height: 30px;
@@ -42,61 +42,55 @@ height: 170px;
 }
 #page-home  header .busca {
      display: flex;
-     justify-content: center;
+     justify-content:center;
      margin:0px auto;
-     padding:-8px;
-     top: 80px;
+     padding:-80px;
+     top: 30px;
      position: relative;
-     height: 500px;
-     right: 150px;
+     height: 200px;
+     right: 120px;
 
     
     }
     #page-home  header .busca .search .txtbusca {
-    border:0px solid #222;
-    background:#EEE;
-    width:260px;
-    height:23px;
-    margin:0 auto;
-    padding:5px 0 5px 5px;
-    float:left; 
-    line-height:36px; 
-    border-radius: 10px;
+        width: 340px;
+        height: 40px;
+        border-radius: 10px;
     }
-    #page-home  header.busca .search .btnBusca {
-    background:darkseagreen;
-    position: relative;
-    border:0px solid #222;
-    color:darkseagreen; 
-    margin:0 auto;
-    padding:10px;
-    border:0 none;
-    font-size:11px;
-    font-weight:bold;
-    text-transform:uppercase;
-    border-radius: 10px;
+    header .busca input::placeholder {
+        text-align: center; 
     }
-    .btnBusca:hover {
-    background:#99cccc; 
-    } 
+    header .busca .search svg {
+        position: absolute;
+        left: 5px;
+        stroke-width: 2px;
+        top: 5px;
+    }
+   
     #page-home  header .cad{
         float:left;
         display: flex;
         position: absolute;
         justify-content: left;
-        right:290px;
-        top: 105px;
+        right:260px;
+        top: 100px;
     }
+    
     #page-home  header .cad .pessoa{ 
         width: 30px;
         height: 30px;
-        right: 160px;
+        right: 135px;
+        
 
     }
     #page-home  header .cad strong{
        font-size: 13px;
        right: 100px;
+      
 
+    }
+    #page-home  header .cad strong:hover{
+        color: #112fda;
     }
     #page-home  .carrinho{
         float:left;
@@ -104,17 +98,16 @@ height: 170px;
         position: absolute;
         justify-content: left;
         right:210px;
-        top: 105px;
+        top: 90px;
        }
     #page-home .carrinho .bolsa{
         width: 40px;
         height: 40px;
-      
-    }
+  }
   
     #page-home  .navbar{
     overflow: hidden ;
-    top: 293px;
+    top: 200px;
     }
     #page-home  .navbar a{
         float: left ;

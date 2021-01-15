@@ -19,30 +19,66 @@ const Home=() =>{
                 <header>
                     <img src={logo} alt='Saladamandra'/>
                     <h1>Produtos Naturais</h1>
+                    
                     <div className='busca'>
                   <form action="/search" className="search" method="get">
                   <input className="txtbusca" name="q" type="text" value="" placeholder="Digite o que você procura" />
                   <input className="btnBusca" type="submit" value="Ok"/>
                   </form>
                    </div>
+                    <div className='cad'>
+                        <Link to='/conta'>
+                        <img className='pessoa' src='https://cdn.icon-icons.com/icons2/934/PNG/512/person-black-user-shape_icon-icons.com_72962.png' />
+                        <span>
+                            <strong>Entre ou Cadastre-se</strong>
+                        <FiLogIn/>
+                        </span>
+                        </Link>
+                    </div>
                         <div className='carrinho'>
                       <Link to="/conta">
-
-                          <img className='bolsa' src='https://static.vecteezy.com/ti/vetor-gratis/p1/628934-icone-carrinho-de-compras-gr%C3%A1tis-vetor.jpg'/>
-
-                          <span>
-                              <strong>Sua Conta</strong>
-                              <FiLogIn/>
-                          </span>
+                          <img className='bolsa' src='https://image.flaticon.com/icons/png/512/126/126510.png'/>
                       </Link>
                       </div>
+                   </header>
+                      <div className="navbar">
+                        <div className="subnav">
+                    
+                          <button className= "subnavbtn">Suplementos <i className="fa fa-caret-down"></i></button>
+                           <div className="subnav-content">
+                           <a href="#"> Glutamina</a>
+                           <a href="#"> Anti-Oxidante </a>
+                           <a href="#"> Colageno </a>
+                           <a href="#"> Minerais </a>
+                        </div>
+                        </div>
+                        <div className="subnav">
+                         <button className= "subnavbtn">Alimentos e bebidas <i className="fa fa-caret-down"></i></button>
+                         <div className="subnav-content">
+                          <a href="#"> Pães e massas</a>
+                         <a href="#"> Doces </a>
+                         <a href="#"> Barras</a>
+                        <a href="#"> Bebidas </a> 
+                        </div>
+                        </div>
+                        <div className="subnav">
+                         <button className= "subnavbtn"> Outros <i className="fa fa-caret-down"></i></button>
+                         <div className="subnav-content">
+                          <a href="#"> Acessorios</a>
+                         <a href="#"> Beleza </a>
+                         <a href="#"> Higiene</a>
+                        
+                        </div>
+                        </div>
+                      </div>
                       
-                    </header>
-                  <hr></hr>
+                 
                   <div className="Banner">
                       <img className='banner' src="https://s3.amazonaws.com/ibc-portal/wp-content/uploads/2020/04/29152053/familia-feliz.jpg"/>
+                      <div className='elipse'>
                       <strong>Cuide bem da sua saude e bem estar da sua familia com produtos naturais e organicos</strong>
-                    </div>
+                      </div>
+                     </div>
                     
                     <div className='menu'>
                         <div className='Low-Carb'>

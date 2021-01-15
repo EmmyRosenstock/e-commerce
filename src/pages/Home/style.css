@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: flex-start;
 }
-#page-home .content header{
+#page-home  header{
     width: 900px;
 	height: 300px;
     position: relative;
@@ -21,13 +21,13 @@
     width: 100%;
 
 }
-#page-home .content header img{
+#page-home  header img{
 position: absolute;
 width: 170px;
 height: 170px;
 
 }
-#page-home .content header h1{
+#page-home  header h1{
      position: relative;
      color: #2E7054;
      text-align:center;
@@ -39,7 +39,7 @@ height: 170px;
      font-family:'Roboto', sans-serif, Bold;
      
 }
-#page-home .content header .busca {
+#page-home  header .busca {
      display: flex;
      justify-content: center;
      margin:0px auto;
@@ -47,22 +47,22 @@ height: 170px;
      top: 80px;
      position: relative;
      height: 500px;
-     right: 100px;
+     right: 150px;
 
     
     }
-    #page-home .content header .busca .search .txtbusca {
+    #page-home  header .busca .search .txtbusca {
     border:0px solid #222;
     background:#EEE;
     width:260px;
     height:23px;
-    
     margin:0 auto;
     padding:5px 0 5px 5px;
     float:left; 
     line-height:36px; 
+    border-radius: 10px;
     }
-    #page-home .content header.busca .search .btnBusca {
+    #page-home  header.busca .search .btnBusca {
     background:darkseagreen;
     position: relative;
     border:0px solid #222;
@@ -73,11 +73,31 @@ height: 170px;
     font-size:11px;
     font-weight:bold;
     text-transform:uppercase;
+    border-radius: 10px;
     }
     .btnBusca:hover {
     background:#99cccc; 
     } 
-    #page-home .content .carrinho{
+    #page-home  header .cad{
+        float:left;
+        display: flex;
+        position: absolute;
+        justify-content: left;
+        right:290px;
+        top: 105px;
+    }
+    #page-home  header .cad .pessoa{ 
+        width: 30px;
+        height: 30px;
+        right: 160px;
+
+    }
+    #page-home  header .cad strong{
+       font-size: 13px;
+       right: 100px;
+
+    }
+    #page-home  .carrinho{
         float:left;
         display: flex;
         position: absolute;
@@ -85,27 +105,89 @@ height: 170px;
         right:210px;
         top: 105px;
        }
-    #page-home .content .carrinho .bolsa{
+    #page-home .carrinho .bolsa{
         width: 40px;
         height: 40px;
       
     }
-    #page-home .content .carrinho strong{
-        text-align: left;
-        text-decoration: none;
-        position: relative;
-        width: 100px;
-        height: 200px;
-
-        
-    }
   
-#page-home .content .Banner{
+    #page-home  .navbar{
+    overflow: hidden ;
+    top: 293px;
+    }
+    #page-home  .navbar a{
+        float: left ;
+        font-size: 16px;
+        
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+          
+    }
+    #page-home  .subnav{
+        float: left;
+        overflow: hidden;
+    }
+    #page-home  .navbar .subnav .subnavbtn{
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color:#222;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    #page-home  .navbar:hover .subnav:hover .subnav{
+        background: #2E7054;
+    }
+    #page-home  .navbar .subnav-content{
+        display: none;
+        position: absolute;
+        left: 0;
+       
+        width: 100%;
+        z-index:1;
+    }
+    #page-home  .navbar .subnav-content a{
+        float: left;
+        color:#222;
+        text-decoration: none;
+    }
+    #page-home  .navbar .subnav-content a:hover{
+        background-color: #EEE;
+        color: black;
+    }
+    #page-home  .navbar .subnav:hover .subnav-content{
+        display: block;
+    }
+    
+  
+#page-home  .Banner{
     display: flex;
     position: relative;
     width: 200px;
     height: 500px;
-    top: 200px;
+    top: 80px;
+}
+#page-home  .Banner .elipse{
+    width: 300px;
+    height: 300px;
+    background: #66bb92;
+    margin-top:100px ;
+    padding: 100px;
+    position: relative;
+    right: 880px;
+    top: -30px;
+    border-radius: 20px;
+    
+}
+#page-home  .Banner .elipse strong{
+    position: relative;
+    top: -80px;
+    width: 100px;
+    height: 100px;
+    text-align: justify;
 }
 
     

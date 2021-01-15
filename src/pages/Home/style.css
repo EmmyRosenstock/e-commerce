@@ -1,6 +1,7 @@
 #page-home{
-    height: 100 vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 #page-home .content{
     width: 100%;
@@ -10,8 +11,8 @@
     padding: 0 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
+
 #page-home  header{
     width: 900px;
 	height: 300px;
@@ -162,10 +163,10 @@ height: 170px;
         display: block;
     }
     
+
   
 #page-home  .Banner{
     display: flex;
-    position: relative;
     width: 200px;
     height: 500px;
     top: 80px;
@@ -190,7 +191,10 @@ height: 170px;
     text-align: justify;
 }
 
+#page-home .content .menu img {
+    height: 150px;
+}
     
-
-
-
+#page-home .content .menu {
+    display: flex;
+}

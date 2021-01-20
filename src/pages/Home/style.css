@@ -89,8 +89,8 @@ height: 170px;
       
 
     }
-    #page-home  header .cad strong:hover{
-        color: #112fda;
+    #page-home  header .cad:hover{
+       -color: blue;
     }
     #page-home  .carrinho{
         float:left;
@@ -106,7 +106,7 @@ height: 170px;
   }
   
     #page-home  .navbar{
-    overflow: hidden ;
+  
     top: 200px;
     }
     #page-home  .navbar a{
@@ -132,62 +132,48 @@ height: 170px;
         font-family: inherit;
         margin: 0;
     }
-    #page-home  .navbar:hover .subnav:hover .subnav{
-        background: #2E7054;
-    }
-    #page-home  .navbar .subnav-content{
-        display: none;
-        position: absolute;
-        left: 0;
-       
-        width: 100%;
-        z-index:1;
-    }
-    #page-home  .navbar .subnav-content a{
-        float: left;
-        color:#222;
-        text-decoration: none;
-    }
-    #page-home  .navbar .subnav-content a:hover{
-        background-color: #EEE;
-        color: black;
-    }
-    #page-home  .navbar .subnav:hover .subnav-content{
-        display: block;
-    }
-    
-
-  
 #page-home  .Banner{
     display: flex;
     width: 200px;
-    height: 500px;
-    top: 80px;
+    height: 300px;
+    top: -85px;
+    position: relative;
 }
 #page-home  .Banner .elipse{
     width: 300px;
     height: 300px;
     background: #66bb92;
     margin-top:100px ;
-    padding: 100px;
+    padding: 120px;
     position: relative;
     right: 880px;
-    top: -30px;
-    border-radius: 20px;
+    top: -99px;
+    border-radius: 200px;
+   
     
 }
 #page-home  .Banner .elipse strong{
-    position: relative;
-    top: -80px;
-    width: 100px;
-    height: 100px;
-    text-align: justify;
+    position: absolute;
+    top: 70px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    right: 20px;
+}
+#page-home .content .menu {
+    display: flex;
+  
 }
 
 #page-home .content .menu img {
     height: 150px;
+ position: relative;
 }
-    
-#page-home .content .menu {
-    display: flex;
+#page-home .content .menu strong {
+   display: none;
+
 }
+#page-home .content .menu:hover strong{
+    display: block;
+}
+

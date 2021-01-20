@@ -1,0 +1,11 @@
+.btnlight{
+    border: 0;
+    position: absolute;
+    background-color: transparent;
+    color: teal;
+    text-decoration: underline;
+    z-index: 1;
+    bottom:10px;
+    right: 0;
+    
+}

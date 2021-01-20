@@ -162,18 +162,22 @@ height: 170px;
 }
 #page-home .content .menu {
     display: flex;
-  
+    justify-content: space-between;
 }
 
 #page-home .content .menu img {
     height: 150px;
- position: relative;
+    position: relative;
 }
 #page-home .content .menu strong {
-   display: none;
-
+   visibility: hidden;
+   text-align: center;
+   display: block;
 }
-#page-home .content .menu:hover strong{
-    display: block;
+#page-home .content .menuitem:hover strong{
+    visibility: visible;
 }
-
+#page-home .content .menuitem a {
+    text-decoration:  none;
+    color: black;
+}

@@ -3,9 +3,10 @@ import {Link} from 'react-router-dom';
 
 import './style.css';
 import {FiLogIn, FiShoppingBag, FiSearch} from 'react-icons/fi'
+import { TiEye, TiUser } from "react-icons/ti"
 import logo from '../../assets/logo.jpeg';
 
-const Header = () => {
+const Home = () => {
     return (
         <div id="page-home">
             <div className="content">
@@ -20,20 +21,21 @@ const Header = () => {
                   <FiSearch type="submit" size={30} />
                   </form>
                    </div>
-                    <div className='cad'>
-                        <Link to='/SignIn'>
-                        <img className='pessoa' src='https://cdn.icon-icons.com/icons2/934/PNG/512/person-black-user-shape_icon-icons.com_72962.png' />
+                   <div className='cad'>
+                       <TiUser  size={30}/>
+                        <a href="#login" className="btnlog"></a>
                         <span>
                             <strong>Entre ou Cadastre-se</strong>
                         
                         </span>
-                        </Link>
+                        
                     </div>
-                        <div className='carrinho'>
+                    <div className='carrinho'>
                       <Link to="/conta">
-                          <img className='bolsa' src='https://image.flaticon.com/icons/png/512/126/126510.png'/>
-                      </Link>
+                          <FiShoppingBag size={30}/>
+                          </Link>
                       </div>
+                   
                    </header>
                    
                       <div className="Banner">
@@ -69,15 +71,42 @@ const Header = () => {
                            <Link to='/produto'>
                                <strong>Diet</strong>
                                <img className='acucar' src='https://image.flaticon.com/icons/png/512/1410/1410541.png'/>
-
-                               </Link>
+                            </Link>
                         </div>
+                       
                     </div> 
 
-               
-            </div>    
-        </div>
+            </div>
+            <div className='modal' id='login'>
+            <h5 className='modal-close'>&#10005,</h5>
+            <div className='modal-content'>
+                <form action="#">
+                    <div className="input-field">
+                        <i className="material-icons">Person</i>
+                        <input type="text" id='name' required/>
+                        <label htmlFor="name">Usuario</label>
+                    </div>
+                    <br/>
+                    <div className="input-field">
+                        <i className="material-icons">lock</i>
+                        <input type="password" id='pass' required/>
+                        <label htmlFor="name">Senha</label>
+                    </div>
+                    <br/>
+                    <div className='left'>
+                        <input type="checkbox" id='check'/>
+                        <label htmlFor="check"><Remeber-me></Remeber-me></label>
+                    </div>
+                </form>
+            </div>
+            </div>
+           
+         </div>   
         
     )
-}
-export default Header;
+    $(document).ready(function() {
+        $('.modal').modal();
+        
+    });
+    }
+export default Home;

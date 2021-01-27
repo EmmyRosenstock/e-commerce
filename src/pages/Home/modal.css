@@ -1,0 +1,92 @@
+:root {
+    --color-ligth-gray: #F0F2f5;
+    --color-secondary-green: #49aa26;
+    --color-pure-white: #fff;
+    --color-not-so-red: #e92929;
+}
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    visibility: visible;
+}
+
+.modal {
+    padding: 2.5rem;
+    position: relative;
+    background: var(--color-ligth-gray);
+    max-width: 500px;
+    width: 100%;
+}
+
+form {
+    max-width: 500px;
+}
+
+form input {
+    display: block;
+    border: 0;
+    border-radius: .2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+form fieldset {
+    border: 0;
+}
+
+form legend {
+    text-align: center;
+}
+
+form fieldset.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 12px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: var(--color-pure-white);
+    background-color: var(--color-secondary-green);
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+button.button-cancel {
+    color: var(--color-not-so-red);
+    background-color: transparent;
+    border: 2px var(--color-not-so-red) solid;
+    opacity: .6;
+}
+
+button.button-submit {
+    color: var(--color-pure-white);
+    background-color: var(--color-secondary-green);
+    opacity: .6;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.sr-only {
+    position: absolute;
+    color: transparent;
+}

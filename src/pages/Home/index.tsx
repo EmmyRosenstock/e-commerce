@@ -1,12 +1,21 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import Modal from './Modal'
 import './style.css';
 import {FiLogIn, FiShoppingBag, FiSearch} from 'react-icons/fi'
 import { TiEye, TiUser } from "react-icons/ti"
 import logo from '../../assets/logo.jpeg';
 
 const Home = () => {
+
+    function toggle(){
+        let modal = document.querySelector('#modal')
+        if(modal){
+            modal.classList.toggle('active')
+        }
+    }
+
     return (
         <div id="page-home">
             <div className="content">
@@ -23,12 +32,12 @@ const Home = () => {
                    </div>
                    <div className='cad'>
                        <TiUser  size={30}/>
-                        <a href="#login" className="btnlog"></a>
-                        <span>
-                            <strong>Entre ou Cadastre-se</strong>
-                        
-                        </span>
-                        
+                        <a href="#" className="btnlog" onClick={toggle}>
+                            <span>
+                                <strong>Entre ou Cadastre-se</strong>
+                            
+                            </span>
+                        </a>
                     </div>
                     <div className='carrinho'>
                       <Link to="/conta">
@@ -77,36 +86,9 @@ const Home = () => {
                     </div> 
 
             </div>
-            <div className='modal' id='login'>
-            <h5 className='modal-close'>&#10005,</h5>
-            <div className='modal-content'>
-                <form action="#">
-                    <div className="input-field">
-                        <i className="material-icons">Person</i>
-                        <input type="text" id='name' required/>
-                        <label htmlFor="name">Usuario</label>
-                    </div>
-                    <br/>
-                    <div className="input-field">
-                        <i className="material-icons">lock</i>
-                        <input type="password" id='pass' required/>
-                        <label htmlFor="name">Senha</label>
-                    </div>
-                    <br/>
-                    <div className='left'>
-                        <input type="checkbox" id='check'/>
-                        <label htmlFor="check"><Remeber-me></Remeber-me></label>
-                    </div>
-                </form>
-            </div>
-            </div>
-           
+            
+            <Modal />
          </div>   
         
-    )
-    $(document).ready(function() {
-        $('.modal').modal();
-        
-    });
-    }
+    )}
 export default Home;
